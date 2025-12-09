@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarComponent } from './navbar.component';
+import { JoinpartyComponent } from './joinparty.component';
 
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('JoinpartyComponent', () => {
+  let component: JoinpartyComponent;
+  let fixture: ComponentFixture<JoinpartyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent]
+      imports: [JoinpartyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavbarComponent);
+    fixture = TestBed.createComponent(JoinpartyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

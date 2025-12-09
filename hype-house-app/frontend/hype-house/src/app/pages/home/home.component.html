@@ -1,1 +1,31 @@
-<p>home works!</p>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">HypeHouse</div>
+  <div class="nav-buttons">
+    <button (click)="goHome()" class="nav-btn">Home</button>
+    <button (click)="goJoinParty()" class="nav-btn">Prijava na žurku</button>
+    <button (click)="goAdmin()" class="nav-btn">Admin</button>
+    <button (click)="goContact()" class="nav-btn">Kontakt</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Dobrodošli u HypeHouse!</h1>
+  <p>Najbolje kuće i objekti za letnje žurke i party evente.</p>
+  <button routerLink="/joinparty" class="cta-btn">Prijavi se na žurku</button>
+</section>
+
+<!-- Featured Info -->
+<section class="featured-info">
+  <h2>Zašto HypeHouse?</h2>
+  <p>
+    Pronađi savršenu kuću ili objekat za tvoju žurku, sa bazenom, terasom ili DJ setom.
+    Naši objekti su sigurni, luksuzni i spremni za nezaboravne letnje provode.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2025 HypeHouse | Kontakt: info&#64;hypehouse.com | Tel: +381 60 1234567</p>
+</footer>

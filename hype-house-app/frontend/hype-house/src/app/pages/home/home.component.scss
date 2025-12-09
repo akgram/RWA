@@ -1,0 +1,118 @@
+/* ================= Navbar ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: #fff;
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ff4da6; // neon pink
+  }
+
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+
+    .nav-btn {
+      background: #ff4da6; // neon pink
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.2s;
+
+      &:hover {
+        background: #00fff7; // tirkiz
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* ================= Hero Section ================= */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #111, #ff4da6, #00fff7);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff4da6;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .cta-btn {
+    background: #ff4da6;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      background: #00fff7;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff4da6, 0 0 25px #00fff7;
+    }
+  }
+}
+
+/* ================= Featured Info ================= */
+.featured-info {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #111;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ff4da6;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+}
+
+/* ================= Footer ================= */
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+
+  p {
+    color: #ff4da6;
+  }
+}
